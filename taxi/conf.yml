@@ -1,0 +1,12 @@
+public:
+  AppName: "yabi"
+  ValidityPeriod: 7
+  Upload: "/home/Project/Go/src/taxi/upload/"
+  Mode: "release" #development or release
+db:
+  Host: localhost
+  Port: 5432
+  Name: yabi
+  User: postgres
+  Password: 123456
+  Engine: postgres

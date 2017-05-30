@@ -1,0 +1,14 @@
+Public:
+  Upload: "/home/ghoroubi/Desktop/upload/"
+  Mode: "release" #development or release
+DB:
+  Engine: "postgres"
+  Host: "localhost"
+  Port: 5432
+  Name: "hermtest"
+  User: "postgres"
+  Password: 123456
+App:
+  Bind-Address: "localhost:8484"
+Agents:
+  Secret: "hermes_test_by_mahsa"

@@ -1,0 +1,14 @@
+public:
+  Token: "191027321:AAFfInIJbpyxG1acczrPWuOxST8GTP3_XXU"
+  MaxRandCharge: 3000
+db:
+  Name: "DBNAME"
+  Password: "PASSWORD"
+  UserId: "USER"
+  Server: "HOSTNAME(IP)\\DB"
+occasion:
+  Key: "Shaban95"  
+  Visible: false
+  Button: "شارژ هدیه به مناسبت اعیاد شعبانیه"
+  AboutGift: "یا شانس و یا اقبال : \n روزانه هر کاربر تلگرام می تواند یک مرتبه شانس خود را در بات رایانه کمک @Rk7129bot امتحان نماید.( میزان اعتبار شانس شما توسط سیستم به صورت کاملا تصادفی انجام می شود.)"
+

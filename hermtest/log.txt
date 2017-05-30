@@ -1,0 +1,363 @@
+2017/05/09 12:30:26 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users/meta Token:  Data: 
+2017/05/09 12:30:33 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 12:30:54 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 12:30:54 logger.go:61: ERROR:BadRequest: Error in parsing body: EOF
+2017/05/09 12:31:03 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users/items Token:  Data: 
+2017/05/09 12:31:14 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users/items/id=1 Token:  Data: 
+2017/05/09 12:31:16 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users/items/ Token:  Data: 
+2017/05/09 12:31:17 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users/items Token:  Data: 
+2017/05/09 12:31:20 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 12:31:20 logger.go:61: ERROR:BadRequest: Error in parsing body: EOF
+2017/05/09 12:34:44 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+
+}
+2017/05/09 12:34:44 logger.go:61: ERROR:NotValid: Email is required!
+2017/05/09 12:35:23 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"email":"test@gmail.com"
+}
+2017/05/09 12:43:20 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/need Token:  Data: {
+"email":"test@gmail.com"
+}
+2017/05/09 12:46:19 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":"1"
+"birth_date":"06/06/1985"
+"display_name":"Nima Ghoroubi"
+"email":"ghoroubi85@gmail.com"
+}
+2017/05/09 12:46:19 logger.go:61: ERROR:BadRequest: Error in parsing body: invalid character '"' after object key:value pair
+2017/05/09 12:46:19 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":"1"
+"birth_date":"06/06/1985"
+"display_name":"Nima Ghoroubi"
+"email":"ghoroubi85@gmail.com"
+}
+2017/05/09 12:46:19 logger.go:61: ERROR:BadRequest: Error in parsing body: invalid character '"' after object key:value pair
+2017/05/09 12:46:42 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":"1"
+"birth_date":"06061985"
+"display_name":"Nima Ghoroubi"
+"email":"ghoroubi85@gmail.com"
+}
+2017/05/09 12:46:42 logger.go:61: ERROR:BadRequest: Error in parsing body: invalid character '"' after object key:value pair
+2017/05/09 12:47:47 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"email":"test@gmail.com"
+}
+2017/05/09 12:48:21 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":1
+"email":"ghoroubi85@gmail.com"
+}
+2017/05/09 12:48:21 logger.go:61: ERROR:BadRequest: Error in parsing body: invalid character '"' after object key:value pair
+2017/05/09 12:48:33 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":1,
+"email":"ghoroubi85@gmail.com"
+}
+2017/05/09 12:52:35 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 13:12:16 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/needs Token:  Data: {
+"id":1,
+"email":"ghoroubi85@gmail.com"
+}
+2017/05/09 13:12:16 logger.go:61: ERROR:NotValid: Title is required!
+2017/05/09 13:13:03 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test Token:  Data: {
+"id":1,
+"email":"ghoroubi85@gmail.com"
+}
+2017/05/09 13:13:57 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/users Token:  Data: 
+2017/05/09 13:14:12 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 13:14:29 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills Token:  Data: 
+2017/05/09 13:16:29 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/needs Token:  Data: [{
+"id":1,
+"title":"Developer"
+},
+{
+"id":2,
+"title":"Driver"
+}
+]
+2017/05/09 13:16:29 logger.go:61: ERROR:BadRequest: Error in parsing body: json: cannot unmarshal array into Go value of type main.Need
+2017/05/09 13:16:46 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/needs Token:  Data: {
+"id":1,
+"title":"Developer"
+}
+2017/05/09 13:16:58 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/needs Token:  Data: {
+"id":2,
+"title":"Driver"
+}
+
+2017/05/09 13:17:03 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/needs Token:  Data: 
+2017/05/09 13:17:54 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":1,
+"title":"Java Programmer"
+}
+
+2017/05/09 13:17:54 logger.go:61: ERROR:NotValid: Person_Id is required!
+2017/05/09 13:18:14 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":2,
+"title":"Network Administrator"
+}
+
+2017/05/09 13:18:14 logger.go:61: ERROR:NotValid: Person_Id is required!
+2017/05/09 13:18:24 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":3,
+"title":"Oracle Administrator"
+}
+
+2017/05/09 13:18:24 logger.go:61: ERROR:NotValid: Person_Id is required!
+2017/05/09 13:18:49 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":4,
+"title":"Go Developer"
+}
+
+2017/05/09 13:18:49 logger.go:61: ERROR:NotValid: Person_Id is required!
+2017/05/09 13:18:55 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills Token:  Data: 
+2017/05/09 13:19:05 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills Token:  Data: 
+2017/05/09 13:20:45 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":4,
+"title":"Go Developer"
+"person_Id":4
+}
+
+2017/05/09 13:20:45 logger.go:61: ERROR:BadRequest: Error in parsing body: invalid character '"' after object key:value pair
+2017/05/09 13:21:09 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":4,
+"title":"Go Developer",
+"person_id":4
+}
+
+2017/05/09 13:21:14 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills Token:  Data: 
+2017/05/09 13:21:33 logger.go:83: Trace:HTTP Request, Method: PUT IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":4,
+"title":"Go Developer",
+"person_id":4
+}
+
+2017/05/09 13:21:50 logger.go:83: Trace:HTTP Request, Method: VIEW IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+"id":4,
+"title":"Go Developer",
+"person_id":4
+}
+
+2017/05/09 13:22:05 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills Token:  Data: 
+2017/05/09 13:22:11 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/needs Token:  Data: 
+2017/05/09 13:22:20 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 13:22:27 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons Token:  Data: 
+2017/05/09 13:25:04 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/persons Token:  Data: {
+"id":4,
+"user_name":"nima",
+"password":"myPassword"
+}
+
+2017/05/09 13:25:09 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons Token:  Data: 
+2017/05/09 13:34:02 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"06/06/1985"
+}
+
+2017/05/09 13:34:02 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""06/06/1985"" as ""2006-01-02T15:04:05Z07:00"": cannot parse "6/1985"" as "2006"
+2017/05/09 13:34:35 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"06\06\1985"
+}
+
+2017/05/09 13:34:35 logger.go:61: ERROR:BadRequest: Error in parsing body: invalid character '0' in string escape code
+2017/05/09 13:34:49 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"06061985"
+}
+
+2017/05/09 13:34:49 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""06061985"" as ""2006-01-02T15:04:05Z07:00"": cannot parse "1985"" as "-"
+2017/05/09 13:35:22 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"1985-06-06"
+}
+
+2017/05/09 13:35:22 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""1985-06-06"" as ""2006-01-02T15:04:05Z07:00"": cannot parse """ as "T"
+2017/05/09 13:36:24 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"1985-06-06T13:30"
+}
+
+2017/05/09 13:36:24 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""1985-06-06T13:30"" as ""2006-01-02T15:04:05Z07:00"": cannot parse """ as ":"
+2017/05/09 13:38:04 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 13:40:06 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"1985-06-06T13:30:00Z03:30"
+}
+
+2017/05/09 13:40:06 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""1985-06-06T13:30:00Z03:30"" as ""2006-01-02T15:04:05Z07:00"": cannot parse "03:30"" as """
+2017/05/09 13:40:29 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"1985-06-0613:30:0003:30"
+}
+
+2017/05/09 13:40:29 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""1985-06-0613:30:0003:30"" as ""2006-01-02T15:04:05Z07:00"": cannot parse "13:30:0003:30"" as "T"
+2017/05/09 13:41:26 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"/1985-06-06T13:30:00Z03:30/"
+}
+
+2017/05/09 13:41:26 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""/1985-06-06T13:30:00Z03:30/"" as ""2006-01-02T15:04:05Z07:00"": cannot parse "/1985-06-06T13:30:00Z03:30/"" as "2006"
+2017/05/09 13:42:40 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"1985-06-06T13:30:00Z03:30"
+}
+
+2017/05/09 13:42:40 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""1985-06-06T13:30:00Z03:30"" as ""2006-01-02T15:04:05Z07:00"": cannot parse "03:30"" as """
+2017/05/09 13:42:55 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"1985-06-06T13:30:00"
+}
+
+2017/05/09 13:42:55 logger.go:61: ERROR:BadRequest: Error in parsing body: parsing time ""1985-06-06T13:30:00"" as ""2006-01-02T15:04:05Z07:00"": cannot parse """ as "Z07:00"
+2017/05/09 13:43:01 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":10,
+"email":"mahsa@gmail.com",
+"birth_date":"1985-06-06T13:30:00Z"
+}
+
+2017/05/09 13:43:49 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":9,
+"email":"ghoroubi@gmail.com",
+"birth_date":"1980-06-06T13:30:00Z"
+}
+
+2017/05/09 13:46:38 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 15:03:01 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":9
+}
+
+2017/05/09 15:03:28 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/users/DeleteUser Token:  Data: {
+"id":9
+}
+
+2017/05/09 15:03:31 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/users/Delete Token:  Data: {
+"id":9
+}
+
+2017/05/09 15:03:36 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/users Token:  Data: {
+"id":9
+}
+
+2017/05/09 15:05:03 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/ Token:  Data: 
+2017/05/09 15:05:12 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 15:05:25 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users/? Token:  Data: 
+2017/05/09 15:05:31 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users/ Token:  Data: 
+2017/05/09 15:05:37 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/09 15:05:40 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users? Token:  Data: 
+2017/05/09 15:06:03 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/users Token:  Data: "id":9
+
+2017/05/09 15:06:11 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/DeleteUsers Token:  Data: "id":9
+
+2017/05/10 15:05:09 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/10 15:05:48 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=skills Token:  Data: 
+2017/05/10 15:05:48 logger.go:61: ERROR:Property does not exists: 
+2017/05/10 15:06:01 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate(skills) Token:  Data: 
+2017/05/10 15:06:28 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/Users/items/2 Token:  Data: "id":9
+
+2017/05/10 15:06:36 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/Users/items/id=2 Token:  Data: "id":9
+
+2017/05/10 15:06:43 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/users/items/id=2 Token:  Data: "id":9
+
+2017/05/10 15:06:43 logger.go:61: ERROR:NotFound: Resource not found!
+2017/05/10 15:06:52 logger.go:83: Trace:HTTP Request, Method: DELETE IP: 127.0.0.1 Path:/test/users/items/2 Token:  Data: "id":9
+
+2017/05/10 15:07:01 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users/ Token:  Data: 
+2017/05/10 15:07:03 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/10 15:11:24 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+	"email":"khalili.smr@yahoo.com",
+	"person":{"user_name":"mrCoder"}
+}
+
+2017/05/10 15:18:32 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/users Token:  Data: {
+	"email":"khalili.smr@gmail.com",
+								  "person":{"user_name":"samira",
+								  "skills":[{"title":"Bigdata"},{
+								  "title":"Data-mining"}]
+	}
+}
+
+2017/05/10 15:21:08 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate(skills) Token:  Data: 
+2017/05/10 15:21:40 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate(skills) Token:  Data: 
+2017/05/10 15:21:53 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate Token:  Data: 
+2017/05/10 15:22:10 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate:skills Token:  Data: 
+2017/05/10 15:22:17 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=skills Token:  Data: 
+2017/05/10 15:22:17 logger.go:61: ERROR:Property does not exists: 
+2017/05/10 15:24:14 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=person(skills) Token:  Data: 
+2017/05/10 15:24:43 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/10 15:25:11 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=person Token:  Data: 
+2017/05/10 15:25:23 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/10 15:27:14 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/10 15:27:31 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=person Token:  Data: 
+2017/05/10 15:28:02 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=person(skills) Token:  Data: 
+2017/05/10 17:02:28 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=person(skills) Token:  Data: 
+2017/05/10 17:10:33 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/10 17:10:33 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/favicon.ico Token:  Data: 
+2017/05/10 17:14:39 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=person(skills) Token:  Data: 
+2017/05/11 12:03:14 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate=person(skills) Token:  Data: 
+2017/05/11 12:03:14 logger.go:61: ERROR:Error: Populate condition wrong, ref dbspace: filedType: int
+2017/05/11 12:03:27 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/11 12:03:42 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills Token:  Data: 
+2017/05/11 12:04:08 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills?$populate=users Token:  Data: 
+2017/05/11 12:04:08 logger.go:61: ERROR:Property does not exists: 
+2017/05/11 12:04:15 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills?$populate:users Token:  Data: 
+2017/05/11 12:04:38 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills?$populate:users(persons) Token:  Data: 
+2017/05/11 12:04:46 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills?$populate:persons Token:  Data: 
+2017/05/11 12:04:52 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills?$populate Token:  Data: 
+2017/05/11 12:05:00 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills,needs?$populate Token:  Data: 
+2017/05/11 12:05:20 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills?$populate:needs,users Token:  Data: 
+2017/05/11 12:15:30 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/11 12:15:47 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate(needs) Token:  Data: 
+2017/05/11 12:16:01 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate:needs Token:  Data: 
+2017/05/11 12:16:14 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate:persons Token:  Data: 
+2017/05/11 12:16:41 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate:Persons(Needs) Token:  Data: 
+2017/05/11 12:16:49 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate:persons(Needs) Token:  Data: 
+2017/05/11 12:16:53 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users?$populate:persons(needs) Token:  Data: 
+2017/05/11 12:17:15 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/users Token:  Data: 
+2017/05/11 12:17:23 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons Token:  Data: 
+2017/05/11 12:17:45 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate Token:  Data: 
+2017/05/11 12:17:51 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate:users Token:  Data: 
+2017/05/11 12:17:53 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate:user Token:  Data: 
+2017/05/11 12:17:54 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate:use Token:  Data: 
+2017/05/11 12:18:01 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate%20users Token:  Data: 
+2017/05/11 12:18:13 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate Token:  Data: 
+2017/05/11 12:18:17 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons Token:  Data: 
+2017/05/11 12:18:54 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate(skills) Token:  Data: 
+2017/05/11 12:19:02 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate:skills Token:  Data: 
+2017/05/11 12:19:05 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate=skills Token:  Data: 
+2017/05/11 12:19:17 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate=skills(needs) Token:  Data: 
+2017/05/11 12:19:17 logger.go:61: ERROR:Property does not exists: 
+2017/05/11 12:19:26 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate=skills(title) Token:  Data: 
+2017/05/11 12:19:26 logger.go:61: ERROR:Error: Populate condition wrong, ref dbspace: filedType: string
+2017/05/11 12:19:34 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate=skills(users) Token:  Data: 
+2017/05/11 12:19:34 logger.go:61: ERROR:Property does not exists: 
+2017/05/11 12:19:40 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate=skills Token:  Data: 
+2017/05/11 12:20:01 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons?$populate=needs Token:  Data: 
+2017/05/11 12:21:16 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/needs Token:  Data: {
+	"title":"Go programmer"
+	}
+2017/05/11 12:21:16 logger.go:61: ERROR:NotValid: Person_Id is required!
+2017/05/11 12:27:22 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/needs Token:  Data: {
+	"person_id":6,
+	"title":"tester"}
+2017/05/11 12:27:31 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/needs Token:  Data: 
+2017/05/14 11:06:56 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/persons Token:  Data: 
+2017/05/14 11:08:08 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/test/skills Token:  Data: {
+	"person_id":2 ,
+	"title":"New Skill"
+	
+}
+2017/05/14 11:08:16 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/test/skills Token:  Data: 
+2017/05/23 12:34:02 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/meta/test Token:  Data: 
+2017/05/23 12:34:09 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/meta Token:  Data: {
+	"User":"manu",
+	"Password":"1 23"
+}

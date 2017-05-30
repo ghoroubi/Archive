@@ -1,0 +1,28 @@
+2017/05/11 16:47:13 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/main/persons Token:  Data: {
+	"username":"ghoroubi"
+}
+2017/05/11 16:47:22 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/main/person Token:  Data: {
+	"username":"ghoroubi"
+}
+2017/05/11 16:49:11 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/auth/person Token:  Data: {
+	"username":"ghoroubi"
+}
+2017/05/11 16:49:14 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/auth Token:  Data: {
+	"username":"ghoroubi"
+}
+2017/05/11 16:49:18 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/auth Token:  Data: 
+2017/05/11 16:54:25 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/users Token:  Data: 
+2017/05/11 16:54:29 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/users Token:  Data: 
+2017/05/11 16:54:40 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/persons Token:  Data: 
+2017/05/11 16:54:42 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/person Token:  Data: 
+2017/05/11 16:58:54 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/users Token:  Data: 
+2017/05/11 16:58:54 logger.go:61: ERROR:pq: relation "users" does not exist
+2017/05/11 16:59:04 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/user Token:  Data: 
+2017/05/11 16:59:08 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/users Token:  Data: 
+2017/05/11 16:59:08 logger.go:61: ERROR:pq: relation "users" does not exist
+2017/05/11 16:59:13 logger.go:83: Trace:HTTP Request, Method: GET IP: 127.0.0.1 Path:/main/persons Token:  Data: 
+2017/05/11 16:59:13 logger.go:61: ERROR:pq: relation "persons" does not exist
+2017/05/11 16:59:25 logger.go:83: Trace:HTTP Request, Method: POST IP: 127.0.0.1 Path:/main/persons Token:  Data: {
+	"username":"ghoroubi"
+}
+2017/05/11 16:59:25 logger.go:61: ERROR:pq: relation "persons" does not exist

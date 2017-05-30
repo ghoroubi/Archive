@@ -1,0 +1,14 @@
+public:
+  Token: "226446325:AAGqUmEuCznHMFfbNUxChnJmTynCM2ME3OQ"
+  MaxRandCharge: 3000
+db:
+  Name: "SystemBank"
+  Password: "7711743050"
+  UserId: "app"
+  Server: "192.168.2.1"
+occasion:
+  Key: "Shaban95"  
+  Visible: false
+  Button: "شارژ هدیه به مناسبت اعیاد شعبانیه"
+  AboutGift: "یا شانس و یا اقبال : \n روزانه هر کاربر تلگرام می تواند یک مرتبه شانس خود را در بات رایانه کمک @rayaneh_komak_bot امتحان نماید.( میزان اعتبار شانس شما توسط سیستم به صورت کاملا تصادفی انجام می شود.)"
+

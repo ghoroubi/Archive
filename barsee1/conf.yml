@@ -1,0 +1,12 @@
+public:
+  AppName: "barsee"
+  ValidityPeriod: 7
+  Upload: "/home/Project/Go/src/barsee/upload/"
+  Mode: "release" #development or release
+db:
+  Host: localhost
+  Port: 5432
+  Name: barsee
+  User: postgres
+  Password: 123456
+  Engine: postgres
